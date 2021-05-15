@@ -1,6 +1,6 @@
 {
   "name": "as-bignum",
-  "version": "0.2.15",
+  "version": "0.0.0-development",
   "description": "128 and 256 bits integer and fixed point arithmetics for AssemblyScript. Also support checking overflow/underflow",
   "main": "js/index.js",
   "types": "assembly/index.ts",
@@ -8,7 +8,7 @@
   "license": "Apache-2.0",
   "repository": {
     "type": "git",
-    "url": "https://github.com/MaxGraey/as-bignum.git"
+    "url": "https://github.com/ashutoshvarma/as-bignum.git"
   },
   "bugs": {
     "url": "https://github.com/MaxGraey/as-bignum/issues"
@@ -29,12 +29,14 @@
     "build:debug": "npx asc assembly/index.ts -b build/debug/bignum.wasm -t build/debug/bignum.wat --debug --sourceMap --runtime stub",
     "build:release": "npx asc assembly/index.ts -b build/release/bignum.wasm -t build/release/bignum.wat -O3 --sourceMap --runtime stub",
     "test": "asp --verbose",
-    "test:ci": "asp 2> /dev/null"
+    "test:ci": "asp 2> /dev/null",
+    "semantic-release": "semantic-release"
   },
   "devDependencies": {
     "@as-pect/cli": "^6.1.1",
     "@types/node": "^15.0.1",
     "assemblyscript": "^0.18.31",
+    "semantic-release": "^17.4.3",
     "ts-node": "^9.1.1",
     "typescript": "^4.2.4"
   },
