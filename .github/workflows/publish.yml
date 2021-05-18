@@ -18,7 +18,7 @@ jobs:
     - name: Install dependencies
       run: |
         npm -v
-        npm ci
+        npm install
     - name: Build packages
       run: |
         VERSION=$(npx aspublish --version)
