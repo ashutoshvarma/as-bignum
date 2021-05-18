@@ -1,5 +1,5 @@
 {
-  "name": "as-bignum",
+  "name": "test_pkg_dummy",
   "version": "0.0.0-development",
   "description": "128 and 256 bits integer and fixed point arithmetics for AssemblyScript. Also support checking overflow/underflow",
   "main": "js/index.js",
